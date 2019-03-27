@@ -1,0 +1,62 @@
+<div style="text-align:left">
+  <span class="full-text texts textColor" style="margin-left:25px;">
+    <img width="40" align="left" [src]="'../assets/img/crowd.png'">Choose number of
+    <strong>people</strong>
+  </span>
+  <br/>
+  <br/>
+  <table class="solid">
+    <br/>
+    <br/>
+    <tr>
+      <td>
+        <img width="50" align="left" [src]="'../assets/img/rooms.png'">
+      </td>
+      <td>
+        <span class="textColor" style="margin-left:25px;">ROOMS</span>
+        <input type="button" [disabled]="roomDecrement" style="margin-left:303px;" class="buttonBlue" (click)="roomMinus()" value="-">
+      </td>
+      <td>
+        <b class="textColor" style="margin-left:100px">{{roomLabel}}</b>
+
+      </td>
+      <td>
+        <input type="button" class="buttonRed" style="margin-left:100px;" value="+" (click)="roomPlus()">
+      </td>
+    </tr>
+    <hr>
+    <tr style="border-bottom:1px solid black">
+      <td>
+        <img width="50" align="left" [src]="'../assets/img/adults.png'">
+      </td>
+      <td>
+        <span class="textColor" style="margin-left:25px;">ADULTS</span>
+        <input type="button" style="margin-left:300px;" class="buttonBlue" (click)="adultsMinus()" value="-">
+      </td>
+      <td>
+        <b class="textColor" style="margin-left:100px">{{adultsLabel}}</b>
+      </td>
+      <td>
+        <input type="button" style="margin-left:100px;" class="buttonRed" (click)="adultsPlus()" value="+">
+      </td>
+    </tr>
+    <hr>
+    <tr>
+      <td>
+        <img width="50" alt="Angular Logo" align="left" [src]="'../assets/img/child.png'">
+
+      </td>
+      <td>
+        <span class="textColor" style="margin-left:25px;">CHILDREN</span>
+        <input type="button" style="margin-left:280px;" class="buttonBlue" value="-" (click)="childrenMinus()">
+      </td>
+      <td>
+        <b class="textColor" style="margin-left:100px">{{childrenLabel}}</b>
+
+      </td>
+      <td>
+        <input type="button" style="margin-left:100px;" class="buttonRed" value="+" (click)="childrenPlus()">
+      </td>
+    </tr>
+  </table>
+</div>
